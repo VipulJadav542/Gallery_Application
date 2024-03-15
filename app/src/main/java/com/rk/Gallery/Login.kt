@@ -1,4 +1,4 @@
-package com.rk.notes
+package com.rk.Gallery
 
 import android.app.Activity
 import android.content.Context
@@ -13,7 +13,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-import com.rk.notes.databinding.ActivityLoginBinding
+import com.rk.Gallery.databinding.ActivityLoginBinding
 
 class Login : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -54,7 +54,7 @@ class Login : AppCompatActivity() {
 //                            editor.putString("email",email1)
 //                            editor.putString("password",password1)
 //                            editor.apply()
-                            startActivity(Intent(this, Home::class.java))
+                            startActivity(Intent(this, ImageUpload::class.java))
                             Toast.makeText(this, "login successfully", Toast.LENGTH_SHORT).show()
                             finish()
                         } else {
@@ -75,7 +75,7 @@ class Login : AppCompatActivity() {
                     auth.signInWithCredential(credential).addOnCompleteListener {
                         if (it.isSuccessful) {
                             savetosharedPreferences()
-                            val intent = Intent(this, Home::class.java)
+                            val intent = Intent(this, ImageUpload::class.java)
                             startActivity(intent)
                             Toast.makeText(this, "login successful", Toast.LENGTH_SHORT).show()
                             finish()

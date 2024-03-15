@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Notes</string>
+    <string name="app_name">Gallery</string>
     <string name="default_web_client_id">131408990813-01jj68v92re5af3l4ha2a98h0000uok7.apps.googleusercontent.com</string>
     <string name="description">Description</string>
     <string name="note_title">Note Title</string>
@@ -18,6 +18,6 @@
     <string name="don_t_have_account">don\'t have account</string>
     <string name="exit">Exit</string>
     <string name="logout">Logout</string>
-    <string name="not_found">not found</string>
+    <string name="not_found">Nothing...</string>
     <string name="add_notes">add notes</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.rk.notes
+package com.rk.Gallery
 
 import android.content.Context
 import android.content.Intent
@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
-import kotlin.math.log
 
 class SplaceScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +17,7 @@ class SplaceScreen : AppCompatActivity() {
             val sharedpref = getSharedPreferences("my_pre", Context.MODE_PRIVATE)
             val email1 = sharedpref.getString("email", null)
             if (email1 != null) {
-                val intent = Intent(this, Home::class.java)
+                val intent = Intent(this, ImageUpload::class.java)
                 startActivity(intent)
                 finish()
             } else {

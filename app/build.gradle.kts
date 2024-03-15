@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.rk.notes"
+    namespace = "com.rk.Gallery"
     compileSdk = 34
 
     buildFeatures {
@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.rk.notes"
+        applicationId = "com.rk.Gallery"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -49,6 +49,8 @@ dependencies {
 
     implementation("com.google.android.gms:play-services-auth:21.0.0")
 
+    //for picasso libraries
+    implementation("com.squareup.picasso:picasso:2.71828")
 
     implementation("com.google.firebase:firebase-database:20.3.1")
     implementation("com.google.firebase:firebase-storage:20.3.0")

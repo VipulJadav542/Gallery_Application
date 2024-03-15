@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -12,14 +13,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-        tools:targetApi="31" >
+        tools:targetApi="31"
+        android:theme="@style/Theme.Notes">
         <activity
-            android:name=".Home"
-            android:exported="false" />
+            android:name="com.rk.Gallery.ImageUpload"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".SplaceScreen"
-            android:exported="true" >
+            android:name="com.rk.Gallery.SplaceScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,11 +32,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Registration"
-            android:exported="false" />
+            android:name="com.rk.Gallery.Registration"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
         <activity
-            android:name=".Login"
-            android:exported="true" />
+            android:name="com.rk.Gallery.Login"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
     </application>
-
 </manifest>

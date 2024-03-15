@@ -1,4 +1,4 @@
-package com.rk.notes
+package com.rk.Gallery
 
 import org.junit.Test
 

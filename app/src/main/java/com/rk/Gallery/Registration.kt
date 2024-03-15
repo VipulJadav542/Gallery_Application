@@ -1,11 +1,11 @@
-package com.rk.notes
+package com.rk.Gallery
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.rk.notes.databinding.ActivityRegistration2Binding
+import com.rk.Gallery.databinding.ActivityRegistration2Binding
 
 class Registration : AppCompatActivity() {
     private lateinit var binding: ActivityRegistration2Binding
